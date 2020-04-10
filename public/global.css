@@ -64,3 +64,23 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+/* Grid */
+
+:root {
+	--grid-cols: 1;
+	--grid-rows: 1;
+}
+
+#grid-container {
+	display: grid;
+	grid-gap: 0;
+	grid-template-rows: repeat(var(--grid-rows), 1fr);
+	grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-cell {
+	padding: 1em;
+	border: 1px solid black;
+	text-align: center;
+}
